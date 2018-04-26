@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<title>Psychic Game</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</head>
+<body onload="startGame()">
+	<div class="container-fluid border-bottom">
+		<div class="container px-0">
+			<nav id="navbar-example2" class="navbar py-0">
+				<div class="navbar-brand  h1 p-3 bg-info text-white my-0">Psychic Game</div>
+			</nav>
+		</div>
+	</div>
+	<div class="container-fluid border-bottom border-info" style="background: url(assets/images/111.png);">
+		<div class="container py-5">
+			<div class="card ">
+				<div class="card-body">
+					<div class="h1 text-info">Guess what letter I'm thinking of <span  style="display: none; color: red" id="thinkletter"></span></div>
+					<hr>
+					
+					<div class="row">
+						<div class="col-md-2">Wins:</div>
+						<div class="col" id="winsNum"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">Losses:</div>
+						<div class="col" id="lossesNum"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">Guesses Left:</div>
+						<div class="col" id="leftNum"></div>
+					</div>
+					<div class="row">
+						<div class="col-md-2">Your Guesses so far:</div>
+						<div class="col" id="guessSoFar"></div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col">
+							<button type="button" class="btn btn-primary" onclick="startGame()">Restart</button>
+							<button type="button" class="btn btn-primary" onclick="showLetter()">Show letter</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<footer class="container-fluid border-top border-info text-center text-light bg-dark p-4"> ruihan Liu </footer>
+</html>
